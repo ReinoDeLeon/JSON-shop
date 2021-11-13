@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto JSON</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/motor.js"></script>
+</head>
+
+<body>
+    <div id="contenedor1">
+        <div id="control1">
+            <input type="text" name="" id="campo1" placeholder="buscar">
+        </div>
+        <div id="resultado1">&nbsp;
+            <div>
+                <div><img src='img/chaqueta01.jpg'></div>
+                <div>
+                    <h3 class='nombre'>" + obj2[index].articulo + "</h3>
+                </div>
+                <div>
+                    <p class='dinero'>" + obj2[index].pvp + "€</p>
+                </div>
+            </div>
+            <div>
+                <a href='detalle.php?ide=" + obj2[index].ide + "'>
+                    <div><img class='imagen' src='img/chaqueta01.jpg'></div>
+                    <div>
+                        <h3 class='nombre'>" + obj2[index].articulo + "</h3>
+                    </div>
+                    <div>
+                        <p class='dinero'>" + obj2[index].pvp + "€</p>
+                    </div>
+                </a>
+            </div>
+            <div>
+                <a href='detalle.php?ide=" + obj2[index].ide + "'>
+                    <div><img class='imagen' src='img/chaqueta01.jpg'></div>
+                    <div>
+                        <h3 class='nombre'>" + obj2[index].articulo + "</h3>
+                    </div>
+                    <div>
+                        <p class='dinero'>" + obj2[index].pvp + "€</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

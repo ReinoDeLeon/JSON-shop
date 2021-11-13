@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #353333;
+    color: #f0f0f0;
+}
+
+input#campo1 {
+    width: 25%;
+    margin-left: 25%;
+    height: 30px;
+}
+
+input#btn1 {
+    width: 25%;
+}
+
+#resultado1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    >div {
+        width: 22%;
+        margin: 1.5%;
+    }
+    div {
+        text-decoration: none;
+        img {
+            max-width: 100%;
+        }
+        .nombre {
+            color: wheat;
+        }
+        .dinero {
+            color: wheat;
+        }
+    }
+}

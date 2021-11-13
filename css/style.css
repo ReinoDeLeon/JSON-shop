@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #353333;
+  color: #f0f0f0;
+}
+
+input#campo1 {
+  width: 25%;
+  margin-left: 25%;
+  height: 30px;
+}
+
+input#btn1 {
+  width: 25%;
+}
+
+#resultado1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#resultado1 > div {
+  width: 22%;
+  margin: 1.5%;
+}
+
+#resultado1 div {
+  text-decoration: none;
+}
+
+#resultado1 div img {
+  max-width: 100%;
+}
+
+#resultado1 div .nombre {
+  color: wheat;
+}
+
+#resultado1 div .dinero {
+  color: wheat;
+}
+/*# sourceMappingURL=style.css.map */

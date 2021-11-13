@@ -1,0 +1,91 @@
+{
+    "datos": [
+
+        {
+            "ide": 1,
+            "articulo": "chaqueta marron",
+            "pvp": 180,
+            "ruta": "img/chaqueta01.jpg"
+        },
+        {
+            "ide": 2,
+            "articulo": "pantalon",
+            "pvp": 89,
+            "ruta": "img/pantalon01.jpg"
+        },
+        {
+            "ide": 3,
+            "articulo": "pantalon",
+            "pvp": 65,
+            "ruta": "img/pantalon02.jpg"
+        },
+        {
+            "ide": 4,
+            "articulo": "pantalon",
+            "pvp": 65,
+            "ruta": "img/pantalon03.jpg"
+        },
+        {
+            "ide": 5,
+            "articulo": "pantalon",
+            "pvp": 65,
+            "ruta": "img/pantalon04.jpg"
+        },
+        {
+            "ide": 6,
+            "articulo": "pantalon",
+            "pvp": 83,
+            "ruta": "img/pantalon01.jpg"
+        },
+        {
+            "ide": 7,
+            "articulo": "pantalon",
+            "pvp": 40,
+            "ruta": "img/pantalon02.jpg"
+        },
+        {
+            "ide": 8,
+            "articulo": "pantalon",
+            "pvp": 59,
+            "ruta": "img/pantalon03.jpg"
+        },
+        {
+            "ide": 9,
+            "articulo": "pantalon",
+            "pvp": 75,
+            "ruta": "img/pantalon04.jpg"
+        },
+        {
+            "ide": 10,
+            "articulo": "chaqueta cuero",
+            "pvp": 29.99,
+            "ruta": "img/chaqueta02.jpg"
+        },
+        {
+            "ide": 11,
+            "articulo": "chaqueta base",
+            "pvp": 79,
+            "ruta": "img/chaqueta03.jpg"
+        },
+        {
+            "ide": 12,
+            "articulo": "camiseta nasa",
+            "pvp": 15.99,
+            "ruta": "img/camiseta02.jpg"
+        },
+        {
+            "ide": 13,
+            "articulo": "camiseta base",
+            "pvp": 24.87,
+            "ruta": "img/camiseta01.jpg"
+        },
+        {
+            "ide": 14,
+            "articulo": "conjunto",
+            "pvp": 89.50,
+            "ruta": "img/conjunto01.jpg"
+        }
+    ]
+
+
+}
