@@ -75,8 +75,13 @@ window.addEventListener("load", function(event) {
         /*Cogemos cada vez que salte el evento el contenido del campo, para simular la lectura en tiempo real
         de la barra de busqueda*/
         const search = document.getElementById("campo1").value.toLowerCase();
-        //Pasamos el texto de busqueda mediante la funcion ignoreAccents(String)
-        cargarJSON1(result1, ignoreAccents(search));
+        if (search === "") {
+            cargarJSONOnLoad(result1)
+        } else {
+            //Pasamos el texto de busqueda mediante la funcion ignoreAccents(String)
+            cargarJSON1(result1, ignoreAccents(search));
+        }
+
     })
 })
 
