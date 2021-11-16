@@ -31,6 +31,36 @@ function cargarJSON1(result1, search) {
     ajax1.send();
 }
 
+function cargarJSONOnLoad(result1) {
+    /*
+    Div --> none
+    rellena el div cuando se carga la página
+    */
+
+    var ajax1 = new XMLHttpRequest();
+    ajax1.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var obj0 = this.responseText;
+            var obj1 = JSON.parse(obj0);
+            var obj2 = obj1["datos"];
+
+            var resultado = "";
+            for (let index = 0; index < obj2.length; index++) {
+                /*
+                Generamos la tienda entera pre-búsqueda
+                */
+
+                resultado += "<div><a href='detalle.php?ide=" + obj2[index].ide + "'><div><img class='imagen' src='" + obj2[index].ruta + "'></div><div><h3 class='nombre'>" + obj2[index].articulo + "</h3></div><div><p class='dinero'>" + obj2[index].pvp + "€</p></div></a></div>";
+
+
+            }
+            //Incorporamos a nuestro HTML los resultados del json
+            document.getElementById(result1.id).innerHTML = resultado;
+        }
+    };
+    ajax1.open("GET", "json/db1.json");
+    ajax1.send();
+}
 
 
 window.addEventListener("load", function(event) {
@@ -39,6 +69,7 @@ window.addEventListener("load", function(event) {
      */
     const result1 = document.getElementById("resultado1");
     const search = document.getElementById("campo1");
+    cargarJSONOnLoad(result1);
     //Keyup implica que cada vez que el usuario esté escribiendo y levante una tecla salta el evento
     search.addEventListener("keyup", function() {
         /*Cogemos cada vez que salte el evento el contenido del campo, para simular la lectura en tiempo real

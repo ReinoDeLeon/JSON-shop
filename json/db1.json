@@ -35,25 +35,25 @@
             "ide": 6,
             "articulo": "pantalon",
             "pvp": 83,
-            "ruta": "img/pantalon01.jpg"
+            "ruta": "img/pantalon05.jpg"
         },
         {
             "ide": 7,
             "articulo": "pantalon",
             "pvp": 40,
-            "ruta": "img/pantalon02.jpg"
+            "ruta": "img/pantalon06.jpg"
         },
         {
             "ide": 8,
             "articulo": "pantalon",
             "pvp": 59,
-            "ruta": "img/pantalon03.jpg"
+            "ruta": "img/pantalon07.jpg"
         },
         {
             "ide": 9,
             "articulo": "pantalon",
             "pvp": 75,
-            "ruta": "img/pantalon04.jpg"
+            "ruta": "img/pantalon08.jpg"
         },
         {
             "ide": 10,
