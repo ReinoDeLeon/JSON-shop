@@ -85,45 +85,39 @@ window.addEventListener("load", function(event) {
             }
 
         })
-    } else if (body1.id == "detalle1") {
-        const result1 = document.getElementById("resultado1");
-        cargarDetalleJSON(this.id, result1);
+    }
+    let user = this.document.getElementById("usuarioEnlace");
+    let info = this.document.getElementById("informacion");
+    let close = this.document.getElementById("close");
+    let closeQA = this.document.getElementById("closeQA");
+    if (user) {
+        close.addEventListener("click", function() {
+            document.getElementById("usuario").style.display = "none";
+        })
+        user.addEventListener("click", function() {
+            document.getElementById("usuario").style.display = "block";
+        })
+    }
+    if (info) {
+        closeQA.addEventListener("click", function() {
+            document.getElementById("qa").style.display = "none";
+        })
+        info.addEventListener("click", function() {
+            document.getElementById("qa").style.display = "block";
+        })
+    }
+    let ventaRealizada = document.getElementById("divVenta");
+    if (ventaRealizada) {
+        ventaRealizada.addEventListener("click", function() {
+            alert("Redirigiendo a la plataforma de pago")
+            window.open("http://www.paypal.com", "_blank");
+        })
     }
 
 
 })
 
-function cargarDetalleJSON(div, id) {
-    /*
-    Div, int --> none
-    la función recibe el div objetivo donde cargar el html y el id de la prenda a mostrar
-    */
-    var ajax1 = new XMLHttpRequest();
-    ajax1.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var obj0 = this.responseText;
-            var obj1 = JSON.parse(obj0);
-            var obj2 = obj1["datos"];
 
-            let resultado = "";
-            for (let index = 0; index < obj2.length; index++) {
-                /*
-                Para todos los objetos que encontremos en json generaremos un valor en resultado
-                con el código html para inyectarlo en la página después y ahorrar los tiempos de carga
-                */
-                if (obj2[index].ide == id) {
-                    resultado += "<div><a href='detalle.php?ide=" + obj2[index].ide + "'><div><img class='imagen' src='" + obj2[index].ruta + "'></div><div><h3 class='nombre'>" + obj2[index].articulo + "</h3></div><div><p class='dinero'>" + obj2[index].pvp + "€</p></div></a></div>";
-                }
-
-
-            }
-            //Incorporamos a nuestro HTML los resultados del json
-            document.getElementById(div.id).innerHTML = resultado;
-        }
-    };
-    ajax1.open("GET", "json/db1.json");
-    ajax1.send();
-}
 
 function ignoreAccents(text) {
     /*

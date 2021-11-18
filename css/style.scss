@@ -13,14 +13,40 @@ body {
     color: #f0f0f0;
 }
 
-input#campo1 {
-    width: 25%;
-    margin-left: 25%;
-    height: 30px;
-}
-
-input#btn1 {
-    width: 25%;
+#control1 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    img {
+        margin-left: 15px;
+        max-width: 10%;
+    }
+    #buscar {
+        padding-left: 15%;
+        width: 80%;
+        display: flex;
+        span {
+            width: auto;
+            padding: 7px;
+            background-color: #504d4d;
+        }
+        input#campo1 {
+            margin: 0;
+            padding: 0;
+            width: 70%;
+            height: 35px;
+        }
+        >h3 {
+            margin-left: 15px;
+            width: auto;
+            a {
+                text-decoration: none;
+                color: #9c9999;
+            }
+        }
+    }
 }
 
 #resultado1 {
@@ -42,6 +68,169 @@ input#btn1 {
         }
         .dinero {
             color: wheat;
+        }
+    }
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    #infoProd {
+        width: 20%;
+        margin: 2.5%;
+        .text {
+            margin-top: 0%;
+            margin: 0 8% 5% 0%;
+            text-align: right;
+            font-size: xx-large;
+            text-transform: capitalize;
+        }
+        .money {
+            padding-top: 5%;
+            margin: 10% 8% 5% 0%;
+            text-align: right;
+        }
+        #discount {
+            width: 45%;
+            margin-right: 10px;
+        }
+        .desc {
+            text-align: right;
+            margin: 15% 8% 5% 0%;
+        }
+        #money {
+            margin-top: 15%;
+            border-top: 1px solid #f9f9f9;
+            text-align: right;
+            padding-top: 5px;
+        }
+        #divVenta {
+            text-align: center;
+            color: #353333;
+            background-color: #fff;
+            border-radius: 15px;
+            margin-top: 50%;
+            cursor: pointer;
+            padding: 15px 0;
+            box-shadow: 7px 5px 12px -5px #c8c7c18c;
+        }
+    }
+     :last-child() {
+        width: 75%;
+        margin: 2.5%;
+    }
+}
+
+#usuario {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.849);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    justify-content: center;
+    .logo {
+        display: flex;
+        justify-content: center;
+        img {
+            align-items: center;
+            max-width: 100%;
+        }
+    }
+    .usuario {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        div {
+            display: flex;
+            width: 100%;
+            padding-bottom: 25px;
+            h2 {
+                margin-left: 10%;
+                text-align: center;
+                width: 40%;
+            }
+            input {
+                width: 40%;
+                margin-right: 10%;
+            }
+        }
+    }
+    div.botones {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        input {
+            width: 30%;
+            margin: 15px 35% 0 35%;
+        }
+    }
+}
+
+#qa {
+    position: fixed;
+    /* Sit on top of the page content */
+    display: none;
+    /* Hidden by default */
+    width: 100%;
+    /* Full width (cover the whole page) */
+    height: 100%;
+    /* Full height (cover the whole page) */
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.849);
+    /* Black background with opacity */
+    z-index: 2;
+    /* Specify a stack order in case you're using a different order for other elements */
+    justify-content: center;
+    .logo {
+        display: flex;
+        justify-content: center;
+        img {
+            align-items: center;
+            max-width: 100%;
+        }
+    }
+    .preguntas {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        div {
+            display: flex;
+            width: 100%;
+            padding-bottom: 25px;
+            h2 {
+                margin-left: 10%;
+                text-align: center;
+                width: 40%;
+            }
+            input {
+                width: 40%;
+                margin-right: 10%;
+            }
+        }
+    }
+    div.botones {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        input {
+            width: 30%;
+            margin: 15px 35% 0 35%;
         }
     }
 }

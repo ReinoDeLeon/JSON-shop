@@ -14,14 +14,58 @@ body {
   color: #f0f0f0;
 }
 
-input#campo1 {
-  width: 25%;
-  margin-left: 25%;
-  height: 30px;
+#control1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-input#btn1 {
-  width: 25%;
+#control1 img {
+  margin-left: 15px;
+  max-width: 10%;
+}
+
+#control1 #buscar {
+  padding-left: 15%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#control1 #buscar span {
+  width: auto;
+  padding: 7px;
+  background-color: #504d4d;
+}
+
+#control1 #buscar input#campo1 {
+  margin: 0;
+  padding: 0;
+  width: 70%;
+  height: 35px;
+}
+
+#control1 #buscar > h3 {
+  margin-left: 15px;
+  width: auto;
+}
+
+#control1 #buscar > h3 a {
+  text-decoration: none;
+  color: #9c9999;
 }
 
 #resultado1 {
@@ -58,5 +102,245 @@ input#btn1 {
 
 #resultado1 div .dinero {
   color: wheat;
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#info #infoProd {
+  width: 20%;
+  margin: 2.5%;
+}
+
+#info #infoProd .text {
+  margin-top: 0%;
+  margin: 0 8% 5% 0%;
+  text-align: right;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+
+#info #infoProd .money {
+  padding-top: 5%;
+  margin: 10% 8% 5% 0%;
+  text-align: right;
+}
+
+#info #infoProd #discount {
+  width: 45%;
+  margin-right: 10px;
+}
+
+#info #infoProd .desc {
+  text-align: right;
+  margin: 15% 8% 5% 0%;
+}
+
+#info #infoProd #money {
+  margin-top: 15%;
+  border-top: 1px solid #f9f9f9;
+  text-align: right;
+  padding-top: 5px;
+}
+
+#info #infoProd #divVenta {
+  text-align: center;
+  color: #353333;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 50%;
+  cursor: pointer;
+  padding: 15px 0;
+  -webkit-box-shadow: 7px 5px 12px -5px #c8c7c18c;
+          box-shadow: 7px 5px 12px -5px #c8c7c18c;
+}
+
+#info :last-child() {
+  width: 75%;
+  margin: 2.5%;
+}
+
+#usuario {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.849);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#usuario .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#usuario .logo img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+#usuario .usuario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#usuario .usuario div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+#usuario .usuario div h2 {
+  margin-left: 10%;
+  text-align: center;
+  width: 40%;
+}
+
+#usuario .usuario div input {
+  width: 40%;
+  margin-right: 10%;
+}
+
+#usuario div.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#usuario div.botones input {
+  width: 30%;
+  margin: 15px 35% 0 35%;
+}
+
+#qa {
+  position: fixed;
+  /* Sit on top of the page content */
+  display: none;
+  /* Hidden by default */
+  width: 100%;
+  /* Full width (cover the whole page) */
+  height: 100%;
+  /* Full height (cover the whole page) */
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.849);
+  /* Black background with opacity */
+  z-index: 2;
+  /* Specify a stack order in case you're using a different order for other elements */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#qa .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#qa .logo img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+#qa .preguntas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#qa .preguntas div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+#qa .preguntas div h2 {
+  margin-left: 10%;
+  text-align: center;
+  width: 40%;
+}
+
+#qa .preguntas div input {
+  width: 40%;
+  margin-right: 10%;
+}
+
+#qa div.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#qa div.botones input {
+  width: 30%;
+  margin: 15px 35% 0 35%;
 }
 /*# sourceMappingURL=style.css.map */

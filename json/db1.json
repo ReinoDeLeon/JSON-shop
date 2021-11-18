@@ -5,85 +5,99 @@
             "ide": 1,
             "articulo": "chaqueta marron",
             "pvp": 180,
-            "ruta": "img/chaqueta01.jpg"
+            "ruta": "img/chaqueta01.jpg",
+            "desc": "Una chaqueta marrón de la nueva colección internacional de Bertino Luccini, sin duda una increíble adición a tu armario de cara a la próxima primavera"
         },
         {
             "ide": 2,
-            "articulo": "pantalon",
+            "articulo": "pantalon de lino",
             "pvp": 89,
-            "ruta": "img/pantalon01.jpg"
+            "ruta": "img/pantalon01.jpg",
+            "desc": "Pantalón de nueva colección que sin duda causa furor entre la gente más joven, muy buena recomendación para conjuntar cualquier elemento de tu armario"
         },
         {
             "ide": 3,
-            "articulo": "pantalon",
+            "articulo": "pantalon blanco",
             "pvp": 65,
-            "ruta": "img/pantalon02.jpg"
+            "ruta": "img/pantalon02.jpg",
+            "desc": "Un pantalón blanco, imprescindible en cualquier amario que se precie, siempre viene bien para cualquier salida nocturna en noches de verano"
         },
         {
             "ide": 4,
-            "articulo": "pantalon",
+            "articulo": "pantalon de chandal",
             "pvp": 65,
-            "ruta": "img/pantalon03.jpg"
+            "ruta": "img/pantalon03.jpg",
+            "desc": "Un pantalón de chándal muy cómodo para cualquier tipo de actividad al aire libre o en la tranquilidad de tu sala de yoga"
         },
         {
             "ide": 5,
-            "articulo": "pantalon",
+            "articulo": "vestido blanco",
             "pvp": 65,
-            "ruta": "img/pantalon04.jpg"
+            "ruta": "img/pantalon04.jpg",
+            "desc": "Vestido fresco para verano, ideal para tranquilos paseos por la playa o eventos veraniegos que requieran de cierta etiqueta"
         },
         {
             "ide": 6,
-            "articulo": "pantalon",
+            "articulo": "pantalon vaquero",
             "pvp": 83,
-            "ruta": "img/pantalon05.jpg"
+            "ruta": "img/pantalon05.jpg",
+            "desc": "Clásico pantalón de trabajo, mantiene su diseño desde su creación en el 1879. Un 'must have' en todo armario masculino"
         },
         {
             "ide": 7,
-            "articulo": "pantalon",
+            "articulo": "pantalon rosa",
             "pvp": 40,
-            "ruta": "img/pantalon06.jpg"
+            "ruta": "img/pantalon06.jpg",
+            "desc": "Un estilo muy sencillo de pantalón traido directamente desde la pequeá fábrica de Unwanted en Italia, una pequeña delicia de pieza al alcance económico de cualquiera"
         },
         {
             "ide": 8,
-            "articulo": "pantalon",
+            "articulo": "pantalon vaquero parcheado",
             "pvp": 59,
-            "ruta": "img/pantalon07.jpg"
+            "ruta": "img/pantalon07.jpg",
+            "desc": "Pantalón vaquero femenino con parches decorativos, sin duda un toque fresco y distinguido que te aleja de los viejos estilos sencillos de vaqueros"
         },
         {
             "ide": 9,
-            "articulo": "pantalon",
+            "articulo": "pantalon de traje naranja",
             "pvp": 75,
-            "ruta": "img/pantalon08.jpg"
+            "ruta": "img/pantalon08.jpg",
+            "desc": "Un distinguido gusto es el que muestra este espectacular diseño de Calvin Klein, sin duda dejarás a cualquiera con la boca abierta en cualquier situación"
         },
         {
             "ide": 10,
             "articulo": "chaqueta cuero",
             "pvp": 29.99,
-            "ruta": "img/chaqueta02.jpg"
+            "ruta": "img/chaqueta02.jpg",
+            "desc": "¿Eres un motero? ¿eres un tío duro? demuestra quién eres con esta increíble chaqueta y su diseño exclusivo, con un material curtido en el propio asfalto"
         },
         {
             "ide": 11,
             "articulo": "chaqueta base",
             "pvp": 79,
-            "ruta": "img/chaqueta03.jpg"
+            "ruta": "img/chaqueta03.jpg",
+            "desc": "Se acerca el frío y no queremos perder la elegancia, sin duda tenemos ante nosotros una prenda imprescindible para cualquier armario en la temporada de otoño"
         },
         {
             "ide": 12,
             "articulo": "camiseta nasa",
             "pvp": 15.99,
-            "ruta": "img/camiseta02.jpg"
+            "ruta": "img/camiseta02.jpg",
+            "desc": "Muestra tu apoyo a esta increíble organización llevando su camiseta oficial"
         },
         {
             "ide": 13,
             "articulo": "camiseta base",
             "pvp": 24.87,
-            "ruta": "img/camiseta01.jpg"
+            "ruta": "img/camiseta01.jpg",
+            "desc": "Una camiseta con un diseño espectacular y sencillo que sirve para el día a día"
         },
         {
             "ide": 14,
-            "articulo": "conjunto",
+            "articulo": "conjunto de chandal",
             "pvp": 89.50,
-            "ruta": "img/conjunto01.jpg"
+            "ruta": "img/conjunto01.jpg",
+            "desc": "Conjunto de chándal amarillo, perfectamente preparado para cualquier actividad deportiva o para demostrar que tienes un estilo único y rompedor"
         }
     ]
 
