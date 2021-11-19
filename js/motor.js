@@ -86,26 +86,36 @@ window.addEventListener("load", function(event) {
 
         })
     }
+
+    /*Este apartado permite tener el overlay del perfil*/
     let user = this.document.getElementById("usuarioEnlace");
-    let info = this.document.getElementById("informacion");
     let close = this.document.getElementById("close");
-    let closeQA = this.document.getElementById("closeQA");
+    //Si el usuario existe
     if (user) {
         close.addEventListener("click", function() {
+            //Ocultamos cuando hacemos click en cerrar
             document.getElementById("usuario").style.display = "none";
         })
         user.addEventListener("click", function() {
+            //Mostramos cuando hacemos click en el icono del usuario
             document.getElementById("usuario").style.display = "block";
         })
     }
+
+    let info = this.document.getElementById("informacion");
+    let closeQA = this.document.getElementById("closeQA");
     if (info) {
         closeQA.addEventListener("click", function() {
+            //Ocultamos cuando hacemos click en cerrar
             document.getElementById("qa").style.display = "none";
         })
         info.addEventListener("click", function() {
+            //Mostramos cuando hacemos click en el icono de información
             document.getElementById("qa").style.display = "block";
         })
     }
+
+    /*Este apartado lanza la página de paypal cuando realizamos la compra*/
     let ventaRealizada = document.getElementById("divVenta");
     if (ventaRealizada) {
         ventaRealizada.addEventListener("click", function() {
