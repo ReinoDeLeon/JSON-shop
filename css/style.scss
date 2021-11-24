@@ -19,6 +19,7 @@ body {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    border-bottom: 2px solid #000;
     img {
         margin-left: 15px;
         max-width: 10%;
@@ -53,6 +54,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     .lateral {
+        border-right: 2px solid #000;
         width: 15%;
         h3 {
             padding: 15px 30px;
@@ -146,6 +148,13 @@ body {
     }
 }
 
+#notFound {
+    font-size: xx-large;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
 #usuario {
     position: fixed;
     /* Sit on top of the page content */
@@ -169,7 +178,7 @@ body {
         justify-content: center;
         img {
             align-items: center;
-            max-width: 100%;
+            width: 30%;
         }
     }
     .usuario {
@@ -225,7 +234,7 @@ body {
         justify-content: center;
         img {
             align-items: center;
-            max-width: 100%;
+            width: 30%;
         }
     }
     .preguntas {
@@ -256,4 +265,8 @@ body {
             margin: 15px 35% 0 35%;
         }
     }
+}
+
+.filtro {
+    cursor: pointer;
 }

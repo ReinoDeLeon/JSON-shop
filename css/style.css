@@ -30,6 +30,7 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  border-bottom: 2px solid #000;
 }
 
 #control1 img {
@@ -77,6 +78,7 @@ body {
 }
 
 #lateral .lateral {
+  border-right: 2px solid #000;
   width: 15%;
 }
 
@@ -204,6 +206,13 @@ body {
   margin: 2.5%;
 }
 
+#notFound {
+  font-size: xx-large;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
 #usuario {
   position: fixed;
   /* Sit on top of the page content */
@@ -239,7 +248,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100%;
+  width: 30%;
 }
 
 #usuario .usuario {
@@ -325,7 +334,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100%;
+  width: 30%;
 }
 
 #qa .preguntas {
@@ -374,5 +383,9 @@ body {
 #qa div.botones input {
   width: 30%;
   margin: 15px 35% 0 35%;
+}
+
+.filtro {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

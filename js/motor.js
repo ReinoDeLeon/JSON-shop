@@ -23,6 +23,9 @@ function cargarJSON1(result1, search) {
                 }
 
             }
+            if (resultado == "") {
+                resultado = "<div id='notFound'><h3>No existen prendas con esa búsqueda</h3><img src='img/avenClothing.png'></div>"
+            }
             //Incorporamos a nuestro HTML los resultados del json
             document.getElementById(result1.id).innerHTML = resultado;
         }
@@ -102,6 +105,7 @@ window.addEventListener("load", function(event) {
         })
     }
 
+    /*Este apartado permite tener el overlay de la informacion*/
     let info = this.document.getElementById("informacion");
     let closeQA = this.document.getElementById("closeQA");
     if (info) {
@@ -125,12 +129,19 @@ window.addEventListener("load", function(event) {
     }
 
     //Añadimos el filtrado
-    let enlaceFiltro = document.querySelector("p.filtro");
-    enlaceFiltro.addEventListener("click", function() {
-        let filtro = enlaceFiltro.innerHTML.toLowerCase;
-        const result1 = document.getElementById("resultado1");
-        cargarJSON1(result1, ignoreAccents(filtro));
-    })
+    //Obtenemos todos los elementos de la lista de filtros
+    let enlaceFiltro = document.querySelectorAll("li p.filtro");
+    //Para cada elemento le pasamos un controlador en "click"
+    for (let index = 0; index < enlaceFiltro.length; index++) {
+        enlaceFiltro[index].addEventListener("click", function() {
+            //Cogemos la id que es donde hemos guardado el valor del filtro
+            let filtrado = enlaceFiltro[index].getAttribute("id");
+            //Obtenemos donde grabar el resultado de la búsqueda y llamamos a la función de carga
+            const result1 = document.getElementById("resultado1");
+            cargarJSON1(result1, filtrado);
+        })
+    }
+
 
 
 })
