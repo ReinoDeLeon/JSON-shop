@@ -124,6 +124,14 @@ window.addEventListener("load", function(event) {
         })
     }
 
+    //Añadimos el filtrado
+    let enlaceFiltro = document.querySelector("p.filtro");
+    enlaceFiltro.addEventListener("click", function() {
+        let filtro = enlaceFiltro.innerHTML.toLowerCase;
+        const result1 = document.getElementById("resultado1");
+        cargarJSON1(result1, ignoreAccents(filtro));
+    })
+
 
 })
 

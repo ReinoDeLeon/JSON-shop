@@ -49,25 +49,48 @@ body {
     }
 }
 
-#resultado1 {
+#lateral {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    >div {
-        width: 22%;
-        margin: 1.5%;
+    .lateral {
+        width: 15%;
+        h3 {
+            padding: 15px 30px;
+        }
+        ul {
+            padding: 0px 45px;
+            list-style: none;
+            font-size: larger;
+            li {
+                padding-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    color: #f0f0f0;
+                }
+            }
+        }
     }
-    div {
-        text-decoration: none;
-        img {
-            max-width: 100%;
+    #resultado1 {
+        width: 85%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        >div {
+            width: 22%;
+            margin: 1.5%;
         }
-        .nombre {
-            color: wheat;
-        }
-        .dinero {
-            color: wheat;
+        div {
+            text-decoration: none;
+            img {
+                max-width: 100%;
+            }
+            .nombre {
+                color: wheat;
+            }
+            .dinero {
+                color: wheat;
+            }
         }
     }
 }
