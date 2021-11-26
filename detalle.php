@@ -20,14 +20,12 @@
             //De datos los metemos en values
             foreach ($json_data['datos'] as $values) {
                 if ($values['ide'] == $_GET['ide']){
-                    echo "<section id='info'><div id='infoProd'><div class='text'>" . $values['articulo'] . "</div>";
+                    echo "<section id='info'><div><img src='" . $values['ruta'] . "'></div><div id='infoProd'><div class='text'>" . $values['articulo'] . "</div>";
                     echo "<div class='money'><input type='text' id='discount' placeholder='promo code'>PVP sin iva = " . $values['pvp'] . "€</div>";
                     echo "<div class='desc'><h4>" . $values['desc'] . "</div>";
                     echo "<div id='money'>PVP con iva = " . round($values['pvp'] + $values['pvp']*0.21, 2) . "€</div>";
-                    echo "<div id='divVenta'><a src='' id='venta'>Comprar ya</a></div></div>";
-                    echo "<div><img src='" . $values['ruta'] . "'></div></section>";
-                }
-                
+                    echo "<div id='divVenta'><a src='' id='venta'>Comprar ya</a></div></div></section>";
+                }    
             }
         ?>
     </div>

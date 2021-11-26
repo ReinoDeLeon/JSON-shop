@@ -35,11 +35,12 @@ body {
 
 #control1 img {
   margin-left: 15px;
-  max-width: 10%;
+  max-width: 40%;
 }
 
 #control1 #buscar {
   padding-left: 15%;
+  padding-bottom: 1%;
   width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,150 +68,6 @@ body {
 #control1 #buscar > h3 a {
   text-decoration: none;
   color: #9c9999;
-}
-
-#lateral {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#lateral .lateral {
-  border-right: 2px solid #000;
-  width: 15%;
-}
-
-#lateral .lateral h3 {
-  padding: 15px 30px;
-}
-
-#lateral .lateral ul {
-  padding: 0px 45px;
-  list-style: none;
-  font-size: larger;
-}
-
-#lateral .lateral ul li {
-  padding-bottom: 10px;
-}
-
-#lateral .lateral ul li a {
-  text-decoration: none;
-  color: #f0f0f0;
-}
-
-#lateral #resultado1 {
-  width: 85%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#lateral #resultado1 > div {
-  width: 22%;
-  margin: 1.5%;
-}
-
-#lateral #resultado1 div {
-  text-decoration: none;
-}
-
-#lateral #resultado1 div img {
-  max-width: 100%;
-}
-
-#lateral #resultado1 div .nombre {
-  color: wheat;
-}
-
-#lateral #resultado1 div .dinero {
-  color: wheat;
-}
-
-#info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-#info #infoProd {
-  width: 20%;
-  margin: 2.5%;
-}
-
-#info #infoProd .text {
-  margin-top: 0%;
-  margin: 0 8% 5% 0%;
-  text-align: right;
-  font-size: xx-large;
-  text-transform: capitalize;
-}
-
-#info #infoProd .money {
-  padding-top: 5%;
-  margin: 10% 8% 5% 0%;
-  text-align: right;
-}
-
-#info #infoProd #discount {
-  width: 45%;
-  margin-right: 10px;
-}
-
-#info #infoProd .desc {
-  text-align: right;
-  margin: 15% 8% 5% 0%;
-}
-
-#info #infoProd #money {
-  margin-top: 15%;
-  border-top: 1px solid #f9f9f9;
-  text-align: right;
-  padding-top: 5px;
-}
-
-#info #infoProd #divVenta {
-  text-align: center;
-  color: #353333;
-  background-color: #fff;
-  border-radius: 15px;
-  margin-top: 50%;
-  cursor: pointer;
-  padding: 15px 0;
-  -webkit-box-shadow: 7px 5px 12px -5px #c8c7c18c;
-          box-shadow: 7px 5px 12px -5px #c8c7c18c;
-}
-
-#info :last-child() {
-  width: 75%;
-  margin: 2.5%;
-}
-
-#notFound {
-  font-size: xx-large;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
 }
 
 #usuario {
@@ -273,13 +130,15 @@ body {
 }
 
 #usuario .usuario div h2 {
+  margin-right: 10%;
   margin-left: 10%;
   text-align: center;
-  width: 40%;
+  width: 30%;
 }
 
 #usuario .usuario div input {
-  width: 40%;
+  margin-left: 10%;
+  width: 30%;
   margin-right: 10%;
 }
 
@@ -361,11 +220,13 @@ body {
 #qa .preguntas div h2 {
   margin-left: 10%;
   text-align: center;
-  width: 40%;
+  width: 30%;
+  margin-right: 10%;
 }
 
 #qa .preguntas div input {
-  width: 40%;
+  margin-left: 10%;
+  width: 30%;
   margin-right: 10%;
 }
 
@@ -385,7 +246,259 @@ body {
   margin: 15px 35% 0 35%;
 }
 
-.filtro {
+#lateral .lateral {
+  display: none;
+  border-right: 2px solid #000;
+  width: 15%;
+}
+
+#lateral .lateral h3 {
+  padding: 15px 30px;
+}
+
+#lateral .lateral ul {
+  padding: 0px 45px;
+  list-style: none;
+  font-size: larger;
+}
+
+#lateral .lateral ul li {
+  padding-bottom: 10px;
+}
+
+#lateral .lateral ul li a {
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+#lateral .filtro {
   cursor: pointer;
+}
+
+#lateral #resultado1 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#lateral #resultado1 > div {
+  width: 97%;
+  margin: 1.5%;
+}
+
+#lateral #resultado1 div {
+  text-decoration: none;
+  text-align: center;
+}
+
+#lateral #resultado1 div img {
+  max-width: 70%;
+}
+
+#lateral #resultado1 div .nombre {
+  color: wheat;
+}
+
+#lateral #resultado1 div .dinero {
+  color: wheat;
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#info #infoProd {
+  width: 95%;
+  margin: 2.5%;
+}
+
+#info #infoProd .text {
+  margin-top: 0%;
+  margin: 0 0% 5% 0%;
+  text-align: center;
+  font-size: xx-large;
+  text-transform: capitalize;
+}
+
+#info #infoProd .money {
+  padding-top: 5%;
+  margin: 10% 8% 5% 0%;
+  text-align: right;
+}
+
+#info #infoProd #discount {
+  width: 45%;
+  margin-right: 10px;
+}
+
+#info #infoProd .desc {
+  text-align: right;
+  margin: 15% 8% 5% 0%;
+}
+
+#info #infoProd #money {
+  margin-top: 15%;
+  border-top: 1px solid #f9f9f9;
+  text-align: right;
+  padding-top: 5px;
+}
+
+#info #infoProd #divVenta {
+  text-align: center;
+  color: #353333;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: 20%;
+  cursor: pointer;
+  padding: 5px 0;
+  -webkit-box-shadow: 7px 5px 12px -5px #c8c7c18c;
+          box-shadow: 7px 5px 12px -5px #c8c7c18c;
+}
+
+#info div img {
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 426px) {
+  #control1 img {
+    margin-left: 5%;
+    max-width: 20%;
+  }
+  #control1 #buscar {
+    width: 75%;
+  }
+  #lateral #resultado1 > div {
+    width: 48%;
+    margin: 1%;
+  }
+  #info #infoProd {
+    width: 95%;
+    margin: 2.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #info #infoProd .text {
+    margin-top: 0%;
+    margin: 0 0% 3% 0%;
+  }
+  #info #infoProd .money {
+    padding-top: 0%;
+    margin: 2% 0% 2% 0%;
+    text-align: center;
+  }
+  #info #infoProd #discount {
+    width: 30%;
+    margin-right: 20%;
+  }
+  #info #infoProd .desc {
+    margin: 5% 8% 5% 0%;
+  }
+  #info #infoProd #money {
+    margin-top: 3%;
+    padding-top: 5px;
+  }
+  #info #infoProd #divVenta {
+    margin-top: 7.5%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #info #infoProd {
+    width: 20%;
+    margin: 2.5%;
+  }
+  #info #infoProd .text {
+    margin-top: 0%;
+    margin: 0 8% 5% 0%;
+  }
+  #info #infoProd .money {
+    padding-top: 5%;
+    margin: 10% 8% 5% 0%;
+  }
+  #info #infoProd #discount {
+    width: 45%;
+    margin-right: 10px;
+  }
+  #info #infoProd .desc {
+    margin: 15% 8% 5% 0%;
+  }
+  #info #infoProd #money {
+    margin-top: 15%;
+    padding-top: 5px;
+  }
+  #info #infoProd #divVenta {
+    border-radius: 15px;
+    margin-top: 50%;
+  }
+  #info :last-child() {
+    width: 75%;
+    margin: 2.5%;
+  }
+  #lateral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #lateral .lateral {
+    display: block;
+  }
+  #lateral #resultado1 {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #lateral #resultado1 > div {
+    width: 22%;
+    margin: 1.5%;
+  }
+  #lateral #resultado1 div {
+    text-decoration: none;
+  }
+  #lateral #resultado1 div img {
+    max-width: 100%;
+  }
+  #lateral #resultado1 div .nombre {
+    color: wheat;
+  }
+  #lateral #resultado1 div .dinero {
+    color: wheat;
+  }
 }
 /*# sourceMappingURL=style.css.map */

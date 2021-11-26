@@ -22,10 +22,11 @@ body {
     border-bottom: 2px solid #000;
     img {
         margin-left: 15px;
-        max-width: 10%;
+        max-width: 40%;
     }
     #buscar {
         padding-left: 15%;
+        padding-bottom: 1%;
         width: 80%;
         display: flex;
         span {
@@ -48,111 +49,6 @@ body {
             }
         }
     }
-}
-
-#lateral {
-    display: flex;
-    flex-wrap: wrap;
-    .lateral {
-        border-right: 2px solid #000;
-        width: 15%;
-        h3 {
-            padding: 15px 30px;
-        }
-        ul {
-            padding: 0px 45px;
-            list-style: none;
-            font-size: larger;
-            li {
-                padding-bottom: 10px;
-                a {
-                    text-decoration: none;
-                    color: #f0f0f0;
-                }
-            }
-        }
-    }
-    #resultado1 {
-        width: 85%;
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        >div {
-            width: 22%;
-            margin: 1.5%;
-        }
-        div {
-            text-decoration: none;
-            img {
-                max-width: 100%;
-            }
-            .nombre {
-                color: wheat;
-            }
-            .dinero {
-                color: wheat;
-            }
-        }
-    }
-}
-
-#info {
-    display: flex;
-    justify-content: center;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    #infoProd {
-        width: 20%;
-        margin: 2.5%;
-        .text {
-            margin-top: 0%;
-            margin: 0 8% 5% 0%;
-            text-align: right;
-            font-size: xx-large;
-            text-transform: capitalize;
-        }
-        .money {
-            padding-top: 5%;
-            margin: 10% 8% 5% 0%;
-            text-align: right;
-        }
-        #discount {
-            width: 45%;
-            margin-right: 10px;
-        }
-        .desc {
-            text-align: right;
-            margin: 15% 8% 5% 0%;
-        }
-        #money {
-            margin-top: 15%;
-            border-top: 1px solid #f9f9f9;
-            text-align: right;
-            padding-top: 5px;
-        }
-        #divVenta {
-            text-align: center;
-            color: #353333;
-            background-color: #fff;
-            border-radius: 15px;
-            margin-top: 50%;
-            cursor: pointer;
-            padding: 15px 0;
-            box-shadow: 7px 5px 12px -5px #c8c7c18c;
-        }
-    }
-     :last-child() {
-        width: 75%;
-        margin: 2.5%;
-    }
-}
-
-#notFound {
-    font-size: xx-large;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
 }
 
 #usuario {
@@ -190,12 +86,14 @@ body {
             width: 100%;
             padding-bottom: 25px;
             h2 {
+                margin-right: 10%;
                 margin-left: 10%;
                 text-align: center;
-                width: 40%;
+                width: 30%;
             }
             input {
-                width: 40%;
+                margin-left: 10%;
+                width: 30%;
                 margin-right: 10%;
             }
         }
@@ -248,10 +146,12 @@ body {
             h2 {
                 margin-left: 10%;
                 text-align: center;
-                width: 40%;
+                width: 30%;
+                margin-right: 10%;
             }
             input {
-                width: 40%;
+                margin-left: 10%;
+                width: 30%;
                 margin-right: 10%;
             }
         }
@@ -267,6 +167,222 @@ body {
     }
 }
 
-.filtro {
-    cursor: pointer;
+#lateral {
+    .lateral {
+        display: none;
+        border-right: 2px solid #000;
+        width: 15%;
+        h3 {
+            padding: 15px 30px;
+        }
+        ul {
+            padding: 0px 45px;
+            list-style: none;
+            font-size: larger;
+            li {
+                padding-bottom: 10px;
+                a {
+                    text-decoration: none;
+                    color: #f0f0f0;
+                }
+            }
+        }
+    }
+    .filtro {
+        cursor: pointer;
+    }
+    #resultado1 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        >div {
+            width: 97%;
+            margin: 1.5%;
+        }
+        div {
+            text-decoration: none;
+            text-align: center;
+            img {
+                max-width: 70%;
+            }
+            .nombre {
+                color: wheat;
+            }
+            .dinero {
+                color: wheat;
+            }
+        }
+    }
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    #infoProd {
+        width: 95%;
+        margin: 2.5%;
+        .text {
+            margin-top: 0%;
+            margin: 0 0% 5% 0%;
+            text-align: center;
+            font-size: xx-large;
+            text-transform: capitalize;
+        }
+        .money {
+            padding-top: 5%;
+            margin: 10% 8% 5% 0%;
+            text-align: right;
+        }
+        #discount {
+            width: 45%;
+            margin-right: 10px;
+        }
+        .desc {
+            text-align: right;
+            margin: 15% 8% 5% 0%;
+        }
+        #money {
+            margin-top: 15%;
+            border-top: 1px solid #f9f9f9;
+            text-align: right;
+            padding-top: 5px;
+        }
+        #divVenta {
+            text-align: center;
+            color: #353333;
+            background-color: #fff;
+            border-radius: 15px;
+            margin-top: 20%;
+            cursor: pointer;
+            padding: 5px 0;
+            box-shadow: 7px 5px 12px -5px #c8c7c18c;
+        }
+    }
+    div {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 426px) {
+    #control1 {
+        img {
+            margin-left: 5%;
+            max-width: 20%;
+        }
+        #buscar {
+            width: 75%;
+        }
+    }
+    #lateral {
+        #resultado1 {
+            >div {
+                width: 48%;
+                margin: 1%;
+            }
+        }
+    }
+    #info {
+        #infoProd {
+            width: 95%;
+            margin: 2.5%;
+            margin-left: 10%;
+            margin-right: 10%;
+            .text {
+                margin-top: 0%;
+                margin: 0 0% 3% 0%;
+            }
+            .money {
+                padding-top: 0%;
+                margin: 2% 0% 2% 0%;
+                text-align: center;
+            }
+            #discount {
+                width: 30%;
+                margin-right: 20%;
+            }
+            .desc {
+                margin: 5% 8% 5% 0%;
+            }
+            #money {
+                margin-top: 3%;
+                padding-top: 5px;
+            }
+            #divVenta {
+                margin-top: 7.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #info {
+        #infoProd {
+            width: 20%;
+            margin: 2.5%;
+            .text {
+                margin-top: 0%;
+                margin: 0 8% 5% 0%;
+            }
+            .money {
+                padding-top: 5%;
+                margin: 10% 8% 5% 0%;
+            }
+            #discount {
+                width: 45%;
+                margin-right: 10px;
+            }
+            .desc {
+                margin: 15% 8% 5% 0%;
+            }
+            #money {
+                margin-top: 15%;
+                padding-top: 5px;
+            }
+            #divVenta {
+                border-radius: 15px;
+                margin-top: 50%;
+            }
+        }
+         :last-child() {
+            width: 75%;
+            margin: 2.5%;
+        }
+    }
+    #lateral {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        .lateral {
+            display: block;
+        }
+        #resultado1 {
+            width: 85%;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            >div {
+                width: 22%;
+                margin: 1.5%;
+            }
+            div {
+                text-decoration: none;
+                img {
+                    max-width: 100%;
+                }
+                .nombre {
+                    color: wheat;
+                }
+                .dinero {
+                    color: wheat;
+                }
+            }
+        }
+    }
 }
